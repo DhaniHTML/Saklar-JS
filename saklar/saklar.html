@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAKLAR</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="smua-button">
+        <h1 class="judul">SAKLAR LAMPU NIH EUY</h1>
+        <div class="ruang-keluarga">
+            <p class="text-rk">RUANG KELUARGA</p>
+            <img src="assets/images/off.gif" alt="" id="lampu1" />
+            <button onclick="saklar('on', 1)">NYALA</button>
+            <button onclick="saklar('off', 1)">MATIK</button>
+            <div class="button-rk">
+                <button class="btn-rk1" onclick="saklar('on-rk')">NYALA</button>
+                <button onclick="saklar('off-rk')">MATIK</button>
+            </div>
+
+            <img src="assets/images/off.gif" alt="" id="lampu2" />
+            <button onclick="saklar('on', 2)">NYALA</button>
+            <button onclick="saklar('off', 2)">MATIK</button>
+
+            <img src="assets/images/off.gif" alt="" id="lampu3" />
+            <button onclick="saklar('on', 3)">NYALA</button>
+            <button onclick="saklar('off', 3)">MATIK</button>
+        </div>
+        <div class="ruang-makan">
+            <P class="text-rm">RUANG MAKAN</P>
+            <img src="assets/images/off.gif" alt="" id="lampu4" />
+            <button onclick="saklar('on', 4)">NYALA</button>
+            <button onclick="saklar('off', 4)">MATIK</button>
+        </div>
+        <div class="ruang-tidur">
+            <p class="text-rt">RUANG TIDUR</p>
+            <button onclick="saklar('on-rt')">NYALA</button>
+            <button onclick="saklar('off-rt')">MATIK</button>
+            <img src="assets/images/off.gif" alt="" id="lampu5" />
+            <button onclick="saklar('on', 5)">NYALA</button>
+            <button onclick="saklar('off', 5)">MATIK</button>
+
+            <img src="assets/images/off.gif" alt="" id="lampu6" />
+            <button onclick="saklar('on', 6)">NYALA</button>
+            <button onclick="saklar('off', 6)">MATIK</button>
+        </div>
+        <div class="ruang-tamu">
+            <P class="text-rt">RUANG TAMU</P>
+            <button onclick="saklar('on-rta')">NYALA</button>
+            <button onclick="saklar('off-rta')">MATIK</button>
+            <img src="assets/images/off.gif" alt="" id="lampu7" />
+            <button onclick="saklar('on', 7)">NYALA</button>
+            <button onclick="saklar('off', 7)">MATIK</button>
+
+            <img src="assets/images/off.gif" alt="" id="lampu8" />
+            <button onclick="saklar('on', 8)">NYALA</button>
+            <button onclick="saklar('off', 8)">MATIK</button>
+
+            <img src="assets/images/off.gif" alt="" id="lampu9" />
+            <button onclick="saklar('on', 9)">NYALA</button>
+            <button onclick="saklar('off', 9)">MATIK</button>
+
+            <img src="assets/images/off.gif" alt="" id="lampu10" />
+            <button onclick="saklar('on', 10)">NYALA</button>
+            <button onclick="saklar('off', 10)">MATIK</button>
+        </div>
+    </div>
+    <script>
+        function saklar(action, lamp) {
+            let lampu1 = document.getElementById("lampu1");
+            let lampu2 = document.getElementById("lampu2");
+            let lampu3 = document.getElementById("lampu3");
+            let lampu4 = document.getElementById("lampu4");
+            let lampu5 = document.getElementById("lampu5");
+            let lampu6 = document.getElementById("lampu6");
+            let lampu7 = document.getElementById("lampu7");
+            let lampu8 = document.getElementById("lampu8");
+            let lampu9 = document.getElementById("lampu9");
+            let lampu10 = document.getElementById("lampu10");
+
+            if (action == "on-rk") {
+                lampu1.src = "assets/images/on.gif"
+                lampu2.src = "assets/images/on.gif"
+                lampu3.src = "assets/images/on.gif"
+            }
+
+            if (action == "off-rk") {
+                lampu1.src = "assets/images/off.gif"
+                lampu2.src = "assets/images/off.gif"
+                lampu3.src = "assets/images/off.gif"
+
+            }
+
+            if (action == "on-rt") {
+                lampu5.src = "assets/images/on.gif"
+                lampu6.src = "assets/images/on.gif"
+            }
+
+            if (action == "off-rt") {
+                lampu5.src = "assets/images/off.gif"
+                lampu6.src = "assets/images/off.gif"
+            }
+
+            if (action == "on-rta") {
+                lampu7.src = "assets/images/on.gif"
+                lampu8.src = "assets/images/on.gif"
+                lampu9.src = "assets/images/on.gif"
+                lampu10.src = "assets/images/on.gif"
+            }
+
+            if (action == "off-rta") {
+                lampu7.src = "assets/images/off.gif"
+                lampu8.src = "assets/images/off.gif"
+                lampu9.src = "assets/images/off.gif"
+                lampu10.src = "assets/images/off.gif"
+            }
+
+
+            if (action == "on") {
+                if (lamp == 1) {
+                    lampu1.src = "assets/images/on.gif"
+                }
+                if (lamp == 2) {
+                    lampu2.src = "assets/images/on.gif"
+                }
+                if (lamp == 3) {
+                    lampu3.src = "assets/images/on.gif"
+                }
+                if (lamp == 4) {
+                    lampu4.src = "assets/images/on.gif"
+                }
+                if (lamp == 5) {
+                    lampu5.src = "assets/images/on.gif"
+                }
+                if (lamp == 6) {
+                    lampu6.src = "assets/images/on.gif"
+                }
+                if (lamp == 7) {
+                    lampu7.src = "assets/images/on.gif"
+                }
+                if (lamp == 8) {
+                    lampu8.src = "assets/images/on.gif"
+                }
+                if (lamp == 9) {
+                    lampu9.src = "assets/images/on.gif"
+                }
+                if (lamp == 10) {
+                    lampu10.src = "assets/images/on.gif"
+                }
+            }
+
+            if (action == "off") {
+                if (lamp == 1) {
+                    lampu1.src = "assets/images/off.gif"
+                }
+                if (lamp == 2) {
+                    lampu2.src = "assets/images/off.gif"
+                }
+                if (lamp == 3) {
+                    lampu3.src = "assets/images/off.gif"
+                }
+                if (lamp == 4) {
+                    lampu4.src = "assets/images/off.gif"
+                }
+                if (lamp == 5) {
+                    lampu5.src = "assets/images/off.gif"
+                }
+                if (lamp == 6) {
+                    lampu6.src = "assets/images/off.gif"
+                }
+                if (lamp == 7) {
+                    lampu7.src = "assets/images/off.gif"
+                }
+                if (lamp == 8) {
+                    lampu8.src = "assets/images/off.gif"
+                }
+                if (lamp == 9) {
+                    lampu9.src = "assets/images/off.gif"
+                }
+                if (lamp == 10) {
+                    lampu10.src = "assets/images/off.gif"
+                }
+            }
+        }
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

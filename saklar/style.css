@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.judul {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.smua-button {
+    background-color: grey;
+}
+
+.text-rk {
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+.ruang-keluarga {
+    text-align: center;
+    flex-direction: column;
+}
+
+.ruang-makan {
+    text-align: center;
+}
+
+.ruang-tidur {
+    text-align: center;
+}
+
+.ruang-tamu {
+    text-align: center;
+}
+
+.text-rm {
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+.text-rt {
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+.text-rt {
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+.button-rk {
+    margin-right: 70%;
+}
+
+.btn-rk1 {
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+.btn-rk1:hover {
+    text-decoration: underline;
+}
+
